@@ -1,0 +1,37 @@
+<header>
+    <nav class="nav">
+        <button id="menu-button" class="menu-button">
+            <%= image_tag "menu-white.svg", class:"menu-icon" %>
+        </button>
+        <ul id="menu" class="menu">
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Navigation 1', root_path %></li>
+            <li><%= link_to 'Navigation 2', root_path %></li>
+            <li><%= link_to 'Navigation 3', root_path %></li>
+        </ul>
+    </nav>
+</header>
+<main class="container-fluid text-center">
+    <section class="container-fluid align-content-center home-container" id="home-1">
+        <div class="home-subcontainer container text-center align-content-center justify-content-center">
+            <h1>Create and share Stories</h1>
+            <%= link_to "Learn more", "about", :class => "btn btn-primary home-btn" %>
+        </div>
+        
+    </section>
+    <section class="container-fluid align-content-center home-container" id="home-2">
+        <h2>Subheading here</h2>
+        <p>I am a tagline!</p>
+    </section>
+    <section class="container-fluid align-content-center home-container" id="home-3">
+        <h2>I am a secondary section!</h2>
+    </section>
+    <section class="container-fluid align-content-center home-container" id="home-4">
+        <h2>I am a Subheading</h2>
+        <%= link_to "Learn more", "about", :class => "btn btn-primary home-btn" %>
+        <%# change where this links to %>
+    </section>
+</main>
+<footer>
+
+</footer>

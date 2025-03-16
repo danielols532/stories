@@ -1,0 +1,99 @@
+* {
+  font-family: "Delius", cursive;
+  color: aliceblue;
+}
+
+/* NAV STYLES */
+.nav {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1000;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-icon {
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.menu-button.active .menu-icon {
+  transform: rotate(45deg);
+}
+
+.menu {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  padding: 12px 0;
+  list-style: none;
+  display: none;
+  min-width: 160px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+}
+
+.menu a:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #007BFF;
+}
+
+
+
+/* HOME PAGE STYLES */
+.home-container {
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 70vh;
+}
+
+#home-1 {
+  background-image: url('img2.jpg');
+}
+
+#home-2 {
+  background-image: url('img3.jpg');
+}
+
+#home-3 {
+  background-image: url('img4.jpg');
+}
+
+#home-4 {
+  background-image: url('img5.jpg');
+}
