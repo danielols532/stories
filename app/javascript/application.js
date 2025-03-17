@@ -2,9 +2,11 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("turbo:load", function () {
     const menuButton = document.getElementById("menu-button");
     const menu = document.getElementById("menu");
+
+    if (!menuButton || !menu) return;
 
     menuButton.addEventListener("click", function () {
         menu.classList.toggle("show");
@@ -19,3 +21,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
