@@ -1,0 +1,17 @@
+<main class="container-fluid justify-content-center align-content-center text-center g-0 contact-main">
+    <div class="container-fluid justify-content-center align-content-center text-center g-0 contact-container">
+        <h1>Get the latest updates from Stories</h1>
+
+    <%= form_for(@signup) do |form| %>
+        <div class="input-form container">
+            <%= form.label :firstname, "First name:" %>
+            <%= form.text_field :firstname %>
+            <%= form.label :email, "Email:" %>
+            <%= form.email_field :email %>
+            <%= form.submit "Join" %>
+        </div>
+    <% end %>
+    
+    </div>
+    
+</main>
